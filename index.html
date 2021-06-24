@@ -4,56 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snowden Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <header>
         <h1>
-            Snowden
+            <a href="./index.thml">Snowden</a>
         </h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>My Projects</li>
-                <li>Contact</li>
-                <li>Resume</li>
+                <li>
+                    <a href="about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="projects">Projects</a>
+                </li>
+                <li>
+                    <a href="contact">Contact</a>
+                </li>
+                <li>
+                    <a href="resume">Resume</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <hero>
+    
+    <section class="hero">
+        <div class="hero-quote">
         <h2>
-            About Me
+            "Just a guy, at a place, during a time..."
         </h2>
-        <p>
-            Here is placement info that will eventually become something about me.
-        </p>
-    </hero>
+        </div>
+    </section>
+    
+    <section id="about-me" class="about">
+        <div class="flex-row">
+            <h2 class="section-title primary-border">
+                About Me
+            </h2>
+        </div>
+        <div class="flex-row">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum molestias impedit iste ipsam tenetur nesciunt rem omnis porro, distinctio unde praesentium culpa mollitia velit quo deleniti recusandae. Culpa, nihil dicta.
+            </p>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="flex-row">
+            <h2 class="section-title secondary-border">
+                Projects
+            </h2>
+        </div>
 
-    <section>
-        <h2>My Projects</h2>
-        <article>
-            <h3>Run-Buddy</h3>
-        </article>
+        <div class="run-buddy">
+            <h3>
+                Run-Buddy
+            </h3>
+            <div class="run-info">
+                <div class="run-img">
+                    <img src="./assets/images/run-buddy" alt="" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="horiseon">
+            <h3>
+                Horiseon
+            </h3>
+            <div class="horiseon-info">
+                <div class="horiseon-img">
+                    <img src="./assets/images/horiseon" alt=""/>
+                </div>
+            </div>
+        </div>
 
-        <article>
-            <h3>Horiseon</h3>
-        </article>
-
-        <article>
-            <h3>Portfolio</h3>
-        </article>
+        <div class="google">
+            <h3>
+                Google (Just a stand-in)
+            </h3>
+            <div class="google-info">
+                <div class="google-img">
+                    <img src="./assets/images/googgle" alt=""/>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Phone</p>
-        <p>Email</p>
-        <p>LinkdIn</p>
-        <p>Spotify</p>
+    <section id="contact" class="contact">
+        <h2 class="section-title primary-border">
+            Contact
+        </h2>
+        <div class="phone">
+        <h3>Phone</h3>
+        </div>
+        <div class="email">
+        <h3>Email</h3>
+        </div>
+        <div class="linkdin">
+        <h3>LinkdIn</h3>
+        </div>
+        <div class="spotify">
+        <h3>Spotify</h3>
+        </div>
     </section>
 
     <footer>
-        Made with Love by Me!
+        <h2>
+            Made with ❤️ by Me!
+        </h2>
     </footer>
 </body>
 </html>

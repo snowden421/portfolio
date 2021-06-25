@@ -1,11 +1,61 @@
 :root {
-    --primary-color: blue;
-    --secondary-color: light-blue;
-    --tertiary-color: ;
+    --primary-color: rgb(0, 0, 66);
+    --secondary-color: #2f7402;
+    --tertiary-color: rgb(182, 7, 7);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul a {
+    padding: 10px 15px;
+}
+
+header nav ul a:hover {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+.hero {
+    background-image: url("../images/Alfie.JPG");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 20px auto;
 }

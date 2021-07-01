@@ -68,8 +68,21 @@ footer h2 {
     flex: 1;
 }
 
+.run-buddy-img {
+   background-image: url("../images/run_buddy_screenshot.PNG");
+   background-size: contain;
+   background-position: fixed;
+   width: 500%;
+   height: 275%;
+}
+
+
 section {
     padding: 60px;
+}
+
+.section-article a {
+    text-decoration: none;
 }
 
 .hero {

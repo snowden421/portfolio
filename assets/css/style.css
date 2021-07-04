@@ -20,11 +20,13 @@ body {
 
 /* start header style */
 header {
+    background-image: url("../images/blue_sky.jpeg");
     width: 100%;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 /* set "Snowden" name */
@@ -36,6 +38,7 @@ header h1 {
 /* remove hyperlink underline for header items */
 header a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 /* start navigation style */
@@ -54,8 +57,8 @@ header nav ul a {
 
 /* set change when mouse hovers over nav items */
 header nav ul a:hover {
-    background: var(--tertiary-color);
-    color: var(--secondary-color);
+    background: var(--fifth-color);
+    color: var(--fourth-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -64,6 +67,7 @@ header nav ul a:hover {
 
 /* start hero style */
 .hero {
+    background-image: url("../images/soft_blue_background.jpg");
     color: var(--primary-color);
     display: flex;
     justify-content: center;
@@ -80,14 +84,23 @@ header nav ul a:hover {
     flex: 1;
 }
 
+.hero-photo img {
+    width: 80%;
+    border: 3px solid black
+}
+
 .hero-quote {
+    width: 80%;
+}
+
+.hero-quote h2 {
     border: 3px solid var(--fifth-color);
     background-color: var(--fourth-color);
-    width: 50%;
+    width: 30%;
     border-radius: 15px;
     text-align: center;
     display: flex;
-    padding: 10px;
+    padding: 10px 10px 0 0;
     margin-top: 10px;
 }
 /* end hero style */
@@ -147,6 +160,19 @@ section {
     flex-wrap: wrap;
 }
 
+.projects img{
+    width: 50%;
+    opacity: 65%;
+}
+
+.projects h3 {
+    z-index: 9999;
+}
+
+.projects img:hover {
+    opacity: 100%;
+}
+
 .projects-first-row {
     width: 100%;
     height: auto;
@@ -156,9 +182,6 @@ section {
 }
   
 .run-buddy {
-    background-image: url("../images/run_buddy_screenshot.PNG");
-    width: 500px;
-    height: 500px;
     border: 3px solid var(--fifth-color);
 
  }
@@ -167,21 +190,15 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    flex-wrap: wrap;
     width: 100%;
     margin: 10px;
 }
 
-.horiseon {
-    background-image: url("../images/horiseon_screenshot.PNG");
-    width: 150px;
-    height: 150px;
-}
-
-.robot-gladiators {
-    background-image: url("../images/robot_gladiators_screenshot.PNG");
-    width: 150px;
-    height: 150px;
+.projects-third-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .contact {
@@ -193,7 +210,9 @@ section {
 .contact-flex {
     align-items: center;
 }
+/* end section style */
 
+/* start footer style */
 footer {
     width: 100%;
 }
@@ -204,6 +223,7 @@ footer h2 {
     margin: 0;
     text-align: left;
 }
+/* end footer */
 
 /* Test style for media queries */
 @media screen and (max-width: 980px) {

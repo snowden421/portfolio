@@ -161,16 +161,21 @@ section {
 }
 
 .projects img{
-    width: 50%;
+    width: 100%;
     opacity: 65%;
-}
-
-.projects h3 {
-    z-index: 9999;
+    position: relative;
 }
 
 .projects img:hover {
     opacity: 100%;
+}
+
+.projects h3 {
+    position: absolute;
+    background-color: aqua;
+    opacity: 100%;
+    text-decoration: solid;
+    z-index: 9999;
 }
 
 .projects-first-row {
@@ -180,10 +185,17 @@ section {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.projects-other-row {
+    width: 50%;
+}
   
 .run-buddy {
     border: 3px solid var(--fifth-color);
 
+ }
+ .run-buddy img {
+     width:100%;
  }
 
 .projects-second-row {
@@ -251,6 +263,7 @@ footer h2 {
 
     .section-title {
         width: 80%;
+        font-size: 30px;
       }
 }
 /* MEDIA QUERY FOR TABLETS AND SMALL */

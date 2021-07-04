@@ -1,11 +1,13 @@
+/* set root colors */
 :root {
-    --primary-color: #fff;
-    --secondary-color: #fc9622;
-    --tertiary-color: #2067ed;
-    --fourth-color: #1757ce;
-    --fifth-color: #0a1b3a;
+    --primary-color: white;
+    --secondary-color: red;
+    --tertiary-color: blue;
+    --fourth-color: green;
+    --fifth-color: black;
 }
 
+/* establish full length sections across page */
 * {
     margin: 0;
     padding: 0;
@@ -16,86 +18,66 @@ body {
     color: var(--tertiary-color);
 }
 
+/* start header style */
 header {
+    width: 100%;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+/* set "Snowden" name */
 header h1 {
     font-weight: bold;
     margin: 0;
 }
 
+/* remove hyperlink underline for header items */
 header a {
     text-decoration: none;
 }
 
+/* start navigation style */
 header nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     list-style: none;
 }
+
 header nav ul a {
-    font-size:1.55vw;
+    font-size:1.66vw;
     padding: 10px 15px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* set change when mouse hovers over nav items */
 header nav ul a:hover {
     background: var(--tertiary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
+/* end navigation style */
+/* end header style*/
 
-footer {
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-    text-align: center;
-    flex: 1;
-}
-
-.run-buddy-img {
-   background-image: url("../images/run_buddy_screenshot.PNG");
-   background-size: contain;
-   background-position: fixed;
-   width: 500%;
-   height: 275%;
-}
-
-
-section {
-    padding: 60px;
-}
-
-.section-article a {
-    text-decoration: none;
-}
-
+/* start hero style */
 .hero {
-    background-image: url("../images/Alfie.JPG");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     color: var(--primary-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
     margin: 0;
+}
+
+/* photo for hero style */
+.hero-photo {
+    width: 50%;
+    display: flex;
+    align-self: center;
+    flex: 1;
 }
 
 .hero-quote {
@@ -106,27 +88,57 @@ section {
     text-align: center;
     display: flex;
     padding: 10px;
+    margin-top: 10px;
+}
+/* end hero style */
+
+/* start section style */
+section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 48px;
+    color: var(--tertiary-color);
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+.section-article {
+    border-left: 3px solid var(--tertiary-color);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 10px;
+}
+
+.section-article a {
+    text-decoration: none;
 }
 
 .flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    width: 30%;
+    text-align: center;
 }
 
 .about {
-    background-image: url("../images/Alfie.JPG");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    color: var(--primary-color);
 }
 
 .me-paragraph {
-    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin: 10px
 }
 
 .projects {
@@ -135,27 +147,103 @@ section {
     flex-wrap: wrap;
 }
 
+.projects-first-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+.run-buddy {
+    background-image: url("../images/run_buddy_screenshot.PNG");
+    width: 500px;
+    height: 500px;
+    border: 3px solid var(--fifth-color);
+
+ }
+
+.projects-second-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+}
+
+.horiseon {
+    background-image: url("../images/horiseon_screenshot.PNG");
+    width: 150px;
+    height: 150px;
+}
+
+.robot-gladiators {
+    background-image: url("../images/robot_gladiators_screenshot.PNG");
+    width: 150px;
+    height: 150px;
+}
+
 .contact {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.section-article {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex: 1;
-    margin: 10px;
+.contact-flex {
+    align-items: center;
 }
 
-.section-title {
-    font-size: 48px;
-    color: var(--seconday-color);
-    border-right: 3px solid var(--fourth-color);
-    margin: 5px;
-    padding: 5px;
-    padding-right: 20px;
-    display: flex;
-    flex-wrap: wrap;
-  }
+footer {
+    width: 100%;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 25px;
+    margin: 0;
+    text-align: left;
+}
+
+/* Test style for media queries */
+@media screen and (max-width: 980px) {
+  
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top:20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    .section-title {
+        width: 80%;
+      }
+}
+/* MEDIA QUERY FOR TABLETS AND SMALL */
+@media screen and (max-width: 786px) {
+ 
+    section {
+     padding: 30px 15px;
+   }
+}
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    .section-title {
+        width: 95%;
+      }
+}
